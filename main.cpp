@@ -7,7 +7,7 @@ int main(int argc, char *argv[])
     a.setOrganizationName("andreag");
     a.setApplicationName("KillManagerQt");
     MainWindow w;
-    w.show();
+    //w.show();
 
     return a.exec();
 }

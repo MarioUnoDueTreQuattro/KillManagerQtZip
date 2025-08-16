@@ -84,7 +84,11 @@ bool MainWindow::zipBackups()
         }
         else QMessageBox::critical( this, "", "Critical error.\n" "Log files not backupep." );
     }
-    else QMessageBox::information (this, "", "There aren't log files to be compressed." );
+    else
+    {
+        //QMessageBox::information (this, "", "There aren't log files to be compressed." );
+   qDebug()<< "There aren't log files to be compressed.";
+    }
     // for (int i = 0; i < iFilesCount; ++i)
     // {
     // logFilePath = files[i].absoluteFilePath();
@@ -99,6 +103,7 @@ bool MainWindow::zipBackups()
     // }
     // else qDebug() << fileName << "successfully moved";
     // }
+return true;
 }
 
 void MainWindow::createTestFile(const QString& path)
