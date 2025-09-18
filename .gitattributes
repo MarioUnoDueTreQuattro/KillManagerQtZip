@@ -1,1 +1,31 @@
+# C++ source files
+*.cpp linguist-language=C++
+*.cxx linguist-language=C++
+*.cc linguist-language=C++
+*.h linguist-language=C++
+*.hpp linguist-language=C++
+
+# Qt project files
 *.pro linguist-language=C++
+*.pri linguist-language=C++
+
+# Qt Designer UI files
+*.ui linguist-language=XML
+
+# Qt resource files
+*.qrc linguist-language=XML
+
+# Qt translation files
+*.ts linguist-language=XML
+
+# Header-only or custom extensions (if any)
+*.hxx linguist-language=C++
+
+# Ignore non-code files for language stats
+*.md linguist-documentation
+*.txt linguist-generated
+*.png linguist-generated
+*.ico linguist-generated
+*.jpg linguist-generated
+*.gif linguist-generated
+*.exe linguist-generated
